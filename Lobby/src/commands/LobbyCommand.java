@@ -2,7 +2,7 @@ package commands;
 
 import org.bukkit.command.CommandSender;
 
-interface Command {
+public interface LobbyCommand {
     boolean execute(CommandSender sender, String[] args);
 
 }

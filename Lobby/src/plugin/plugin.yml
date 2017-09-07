@@ -1,0 +1,22 @@
+name: lobby
+version: 1.0.1
+author: Osniackal
+website: https://github.com/Osniackal
+main: plugin.LobbyMain
+prefix: lobby
+commands:
+  spawn:
+    aliases: [lobby, start]
+    permission: lobby.spawn
+  setspawn:
+    permission: lobby.setspawn
+permissions:
+  lobby.*:
+    default: op
+    children:
+      lobby.spawn: true
+      lobby.setspawn: true
+  lobby.spawn:
+    default: true
+  lobby.setspawn:
+    default: op
